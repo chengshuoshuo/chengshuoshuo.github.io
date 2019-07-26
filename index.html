@@ -173,9 +173,9 @@
 
 
   
-    <article id="post-javascript-1-5" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-javascript-1-4" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/05/16/javascript-1-5/" class="article-date">
+    <a href="/2019/05/16/javascript-1-4/" class="article-date">
   <time datetime="2019-05-16T08:58:20.000Z" itemprop="datePublished">2019-05-16</time>
 </a>
     
@@ -191,7 +191,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/16/javascript-1-5/">javascript-入门之函数</a>
+      <a class="article-title" href="/2019/05/16/javascript-1-4/">javascript-入门之函数</a>
     </h1>
   
 
@@ -199,23 +199,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="函数的基本定义"><a href="#函数的基本定义" class="headerlink" title="函数的基本定义"></a>函数的基本定义</h5><p>函数就是可以重复调用执行的代码块；<br>将一段代码进行封装，在需要执行代码的时侯调用函数，里面的代码就会被执行。</p>
-<h5 id="函数的语法"><a href="#函数的语法" class="headerlink" title="函数的语法"></a>函数的语法</h5><p>函数的基本语法 <code>function 函数名(参数1,参数2,参数3,参数n){需要执行的代码}</code></p>
-<h5 id="函数的基本示例"><a href="#函数的基本示例" class="headerlink" title="函数的基本示例"></a>函数的基本示例</h5><p>函数可以不带参数的执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function myFunction()&#123;</span><br><span class="line">	console.log(&quot;this is function&quot;);</span><br><span class="line">&#125;</span><br><span class="line">myFunction()//调用函数</span><br></pre></td></tr></table></figure>
+        <h4 id="函数的基本定义"><a href="#函数的基本定义" class="headerlink" title="函数的基本定义"></a>函数的基本定义</h4><p>函数就是可以重复调用执行的代码块；<br>将一段代码进行封装，在需要执行代码的时侯调用函数，里面的代码就会被执行。</p>
+<h4 id="函数的语法"><a href="#函数的语法" class="headerlink" title="函数的语法"></a>函数的语法</h4><p>函数的基本语法 <code>function 函数名(参数1,参数2,参数3,参数n){需要执行的代码}</code></p>
+<h4 id="函数的基本示例"><a href="#函数的基本示例" class="headerlink" title="函数的基本示例"></a>函数的基本示例</h4><h5 id="函数可以不带参数的执行"><a href="#函数可以不带参数的执行" class="headerlink" title="函数可以不带参数的执行"></a>函数可以不带参数的执行</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function myFunction()&#123;</span><br><span class="line">	console.log(&quot;this is function&quot;);</span><br><span class="line">&#125;</span><br><span class="line">myFunction()//调用函数</span><br></pre></td></tr></table></figure>
 
-<p>函数带参数的执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function myFunction(a,b,c)&#123;</span><br><span class="line">console.log(a,b,c);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">myFunction(&quot;this &quot;,&quot;is &quot;,&quot;string&quot;);//加入参数，开发台输出传进去的参数</span><br></pre></td></tr></table></figure>
+<h5 id="函数带参数的执行"><a href="#函数带参数的执行" class="headerlink" title="函数带参数的执行"></a>函数带参数的执行</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function myFunction(a,b,c)&#123;</span><br><span class="line">console.log(a,b,c);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">myFunction(&quot;this &quot;,&quot;is &quot;,&quot;string&quot;);//加入参数，开发台输出传进去的参数</span><br></pre></td></tr></table></figure>
 
-<p>函数还可以将值返回，通过return 就可以实现，同时退出函数，不再执行return后面的代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function myFunction(a)&#123;</span><br><span class="line">return a;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(myFunction(&quot;hello world!&quot;));</span><br></pre></td></tr></table></figure>
+<h5 id="函数还可以将值返回，通过return-就可以实现，同时退出函数，不再执行return后面的代码"><a href="#函数还可以将值返回，通过return-就可以实现，同时退出函数，不再执行return后面的代码" class="headerlink" title="函数还可以将值返回，通过return 就可以实现，同时退出函数，不再执行return后面的代码"></a>函数还可以将值返回，通过return 就可以实现，同时退出函数，不再执行return后面的代码</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function myFunction(a)&#123;</span><br><span class="line">return a;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(myFunction(&quot;hello world!&quot;));</span><br></pre></td></tr></table></figure>
+
+<h5 id="函数的闭包"><a href="#函数的闭包" class="headerlink" title="函数的闭包"></a>函数的闭包</h5><p>JavaScript函数中可能用全局变量和局部变量；</p>
+<p>以下用到了局部变量，局部变量只对函数内部有效</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function myFunction()&#123;</span><br><span class="line">    var a=2;</span><br><span class="line">    return a*a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>下面例子用到了全局变量；计数器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var con=0;</span><br><span class="line">funtion add()&#123;</span><br><span class="line">    con=+;</span><br><span class="line">&#125;</span><br><span class="line">add();</span><br><span class="line">add();</span><br></pre></td></tr></table></figure>
+
+<h6 id="JavaScript内嵌函数"><a href="#JavaScript内嵌函数" class="headerlink" title="JavaScript内嵌函数"></a>JavaScript内嵌函数</h6><p>所用函数都可以访问上一层函数的作用域；</p>
+<p>JavaScript支持内嵌函数，嵌套函数可以访问上一层的函数变量；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function con()&#123;</span><br><span class="line">    var conter=0;</span><br><span class="line">    function plus()&#123;</span><br><span class="line">        conter+=;</span><br><span class="line">    &#125;</span><br><span class="line">    plus();</span><br><span class="line">    return conter;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="JavaScript闭包"><a href="#JavaScript闭包" class="headerlink" title="JavaScript闭包"></a>JavaScript闭包</h6><p>函数自我调用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var add=(function()&#123;</span><br><span class="line">   conter=0;</span><br><span class="line">   return function()&#123;</span><br><span class="line">       return conter+=;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;)()</span><br><span class="line">add();</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/16/javascript-1-5/" data-id="cjyjwq9qq001facuxgl51hx77" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/16/javascript-1-4/" data-id="cjyk0vwjw0004x4uxgg542bv2" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/function/">function()</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/函数/">函数</a></li></ul>
 
     </footer>
   </div>
@@ -506,60 +519,6 @@ console.log(&quot;dowhile语句&quot; + j);
 
 
   
-    <article id="post-javascript-1-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/05/10/javascript-1-1/" class="article-date">
-  <time datetime="2019-05-10T11:00:15.000Z" itemprop="datePublished">2019-05-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/JavaScript入门/">JavaScript入门</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/10/javascript-1-1/">javascript-入门之变量</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="变量的声明、命名和赋值"><a href="#变量的声明、命名和赋值" class="headerlink" title="变量的声明、命名和赋值"></a>变量的声明、命名和赋值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var num=1;</span><br></pre></td></tr></table></figure>
-
-<p>以上给一个变量命名为num，赋值为1；由var进行声明</p>
-<p>变量的命名必须以字母、下划线或美元符号来开头；后面可以跟字母、数字、下滑线和美元符号</p>
-<h4 id="变量的表达式和基本操作"><a href="#变量的表达式和基本操作" class="headerlink" title="变量的表达式和基本操作"></a>变量的表达式和基本操作</h4><p>下面是基本的表达式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var nums=123+321l</span><br></pre></td></tr></table></figure>
-
-<p>可以对各种变量进行操作，用法是加入操作符</p>
-<p>有算数操作符+、 =、*、 /、%</p>
-<p>有比较操作符&gt;、 &lt; 、 =、  !=；</p>
-<p>有逻辑操作符 ||(或)、&amp;&amp;(与)</p>
-<p>有赋值操作符</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/10/javascript-1-1/" data-id="cjyjwq9qj0013acuxa4irktwg" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-javascript-0-2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/05/10/javascript-0-2/" class="article-date">
@@ -659,6 +618,131 @@ console.log(&quot;dowhile语句&quot; + j);
 
 
   
+    <article id="post-javascript-2-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/10/javascript-2-2/" class="article-date">
+  <time datetime="2019-05-10T11:00:15.000Z" itemprop="datePublished">2019-05-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript入门/">JavaScript入门</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/10/javascript-2-2/">javascript-入门之数组（Array[]）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="创建数组并命名"><a href="#创建数组并命名" class="headerlink" title="创建数组并命名"></a>创建数组并命名</h4><h5 id="数组的声明方式"><a href="#数组的声明方式" class="headerlink" title="数组的声明方式"></a>数组的声明方式</h5><p>声明方式有两种字面量和构造函数<br>字面量如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,&quot;s&quot;,5,true];</span><br><span class="line">console.log(arr);</span><br></pre></td></tr></table></figure>
+
+<p>构造函数声明如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr=new Array(1,&quot;s&quot;,5);</span><br><span class="line">console.log(arr);</span><br></pre></td></tr></table></figure>
+
+<p>给数组内某个位置重新赋值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr[1]=&quot;S&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>获取指定位置元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(arr[1]);</span><br></pre></td></tr></table></figure>
+
+<p>删除数组内特定元素 不改变数组长度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete arr[0];</span><br></pre></td></tr></table></figure>
+
+<p>清空数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr=[];</span><br></pre></td></tr></table></figure>
+
+<p>判断arr是否是一个数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">arr=[1,2,3,4]</span><br><span class="line">var boolearn=Array.isArray(arr)//判断arr是否数组并赋予boolearn</span><br><span class="line">console.log(boolearn);//将判断打印出来是true；</span><br></pre></td></tr></table></figure>
+
+<p>从类数组或可迭代对象中创建一个新的数组实例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = &quot;abacf&quot;;</span><br><span class="line">var arr = Array.from(a);</span><br><span class="line">console.log(arr);</span><br></pre></td></tr></table></figure>
+
+<p>把各种类型数据放在一起组成数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr2 = Array.of(2, 3, 2, &quot;d&quot;, &quot;a&quot;, true, false);</span><br><span class="line">console.log(Array.isArray(arr2))//打印出来true</span><br></pre></td></tr></table></figure>
+
+<h5 id="数组-Array-的一些操作方法"><a href="#数组-Array-的一些操作方法" class="headerlink" title="数组(Array)的一些操作方法"></a>数组(Array)的一些操作方法</h5><ul>
+<li>push(string)   在数组的尾部添加元素并返回数组长度</li>
+<li>pop()            将数组的尾部元素删除并返回那个被删除的元素</li>
+<li>unshift(string)在数组的头部添加元素并返回数组长度 </li>
+<li>shift()          将数组的头部元素删除并返回那个被删除的元素</li>
+<li>slice(num1,num2)获取数组内位置从num1到位置num2(不包含num2)的元素返回</li>
+<li>splice(num1,num2)截取数组中位置从num1开始的num2个元素返回</li>
+<li>splice(num1,num2,str3)截取数组中位置从num1开始的num2个元素返回，并将str3插入数组</li>
+<li>join(string)将数组内的元素转为字符串形式拼接来，string是拼接时元素间的添加元素</li>
+<li>concat(Array)将一个数组和并在另一个数组中并可以赋予给新的变量</li>
+<li>sort()数组内的元素按顺序排序</li>
+<li>reverse()数组内元素反序排列</li>
+<li>lenght获取数组长度</li>
+<li><h6 id="push-能够在数组的尾部添加元素"><a href="#push-能够在数组的尾部添加元素" class="headerlink" title="push()能够在数组的尾部添加元素"></a>push()能够在数组的尾部添加元素</h6>push()在给数组尾部添加元素的同时还可以返回数组长度，如下<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[2,5,8,6,4];</span><br><span class="line">var brr=arr.push(5);//此时的 brr=[2,5,8,6,4,5]</span><br><span class="line">console.log(brr);//此时输出6</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h6 id="pop-将数组的尾部元素删除并返回"><a href="#pop-将数组的尾部元素删除并返回" class="headerlink" title="pop()将数组的尾部元素删除并返回"></a>pop()将数组的尾部元素删除并返回</h6><p>pop()可以把数组的最右侧元素删除并返回</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[2,5,8,9,5];</span><br><span class="line">var brr=arr.pop();// 此时的brr=[2,5,8,9]</span><br><span class="line">console.log(brr);//此时输出5</span><br></pre></td></tr></table></figure>
+
+<h6 id="unshift"><a href="#unshift" class="headerlink" title="unshift()"></a>unshift()</h6><p>unshift()在数组的最左侧添加元素并返回长度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.unshift(6);//此时的brr=[6,1,2,3,4,6]</span><br><span class="line">console.log(brr);//此时输出6</span><br></pre></td></tr></table></figure>
+
+<h6 id="shift"><a href="#shift" class="headerlink" title="shift()"></a>shift()</h6><p>shift()在数组的最左侧删除元素并返回被删除的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.shift();//此时的brr=[2,3,4,6]</span><br><span class="line">console.log(brr);//此时输出1</span><br></pre></td></tr></table></figure>
+
+<h6 id="slice"><a href="#slice" class="headerlink" title="slice()"></a>slice()</h6><p>slice(number1,number2)获取从number1位置到number2位置（不包含number2）的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.slice(1,3);//此时的brr=[2,3]</span><br><span class="line">console.log(brr);//此时输出[2,3]</span><br></pre></td></tr></table></figure>
+
+<h6 id="splice-number1-number2"><a href="#splice-number1-number2" class="headerlink" title="splice(number1,number2)"></a>splice(number1,number2)</h6><p>splice(number1,number2)，从number1位置开始向右获取number2个元素，并将数组中对应的元素删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.splice(1,3);//此时的brr=[2,3,4];arr=[1,5];</span><br><span class="line">console.log(brr);//此时输出[2,3,4]</span><br></pre></td></tr></table></figure>
+
+<h6 id="splice-number1-number2-string"><a href="#splice-number1-number2-string" class="headerlink" title="splice(number1,number2,string)"></a>splice(number1,number2,string)</h6><p>splice(number1,number2,string)，从number1位置开始向右获取number2个元素，并将数组中对应的元素删除,插入新的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.splice(1,3,&quot;4&quot;);//此时的brr=[2,3,4];arr=[1,&quot;4&quot;,5];</span><br><span class="line">console.log(brr);//此时输出[2,3,4]</span><br></pre></td></tr></table></figure>
+
+<h6 id="创建二维数组"><a href="#创建二维数组" class="headerlink" title="创建二维数组"></a>创建二维数组</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">var myarr=[[1,2],[1,2,3,4,5]]</span><br><span class="line">document.write(myarr);</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="带回调函数的一些方法"><a href="#带回调函数的一些方法" class="headerlink" title="带回调函数的一些方法"></a>带回调函数的一些方法</h5><p>带回调函数的方法语法大致为<code>Array.map(function(currentValue,index,array){},thisArg)</code>，<code>currentValue</code>是数组中正在处理的当前元素，<code>index</code>是可选的，是数组中正在处理的当前元素的索引；<code>array</code>是可选的，是forEach()方法正在操作的数组；thisArg是可选参数；当执行回调函数时用作 <code>this</code> 的值(参考对象)。</p>
+<h6 id="常用的带回调函数的方法"><a href="#常用的带回调函数的方法" class="headerlink" title="常用的带回调函数的方法"></a>常用的带回调函数的方法</h6><ul>
+<li>Array.map()</li>
+<li>Array.forEach()</li>
+<li>Array.every()</li>
+<li>Array.some()</li>
+<li>Array.find()</li>
+<li>Array.findIndex()</li>
+<li>Array.filter()</li>
+<li>reduce()</li>
+</ul>
+<h6 id="Array-map-方法的依次处理数组元素"><a href="#Array-map-方法的依次处理数组元素" class="headerlink" title="Array.map()方法的依次处理数组元素"></a>Array.map()方法的依次处理数组元素</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4];</span><br><span class="line">var arr2=arr.map(function(ele,index,array)&#123;//ele指元素值 index指下标 array指原数组本身</span><br><span class="line">    return Math.pow(ele,3)//Math.pow是ele的3次方运算</span><br><span class="line">&#125;)</span><br><span class="line">console.log(arr2);//打印出 [1, 8, 27, 64]</span><br></pre></td></tr></table></figure>
+
+<p>或者可以这样写，一下是ES6的写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4];</span><br><span class="line">var arr2=arr.map((ele,index,array)=&gt;&#123;//ele指元素值 index指下标 array指原数组本身</span><br><span class="line">    return Math.pow(ele,3)//Math.pow是ele的3次方运算</span><br><span class="line">&#125;)</span><br><span class="line">console.log(arr2);//打印出 [1, 8, 27, 64]</span><br></pre></td></tr></table></figure>
+
+<p>Array.forEach()将数组元素遍历会为内部每个元素都调用函数 但是不能被调用 只会返回undefined</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3, 4];</span><br><span class="line">	arr.map(function(e, i, a) &#123;</span><br><span class="line">		var ele = Math.pow(e, 2)</span><br><span class="line">		console.log(ele);</span><br><span class="line">	&#125;)</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/10/javascript-2-2/" data-id="cjyjwq9qu001lacuxd7lz168g" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Array/">Array[]</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数组/">数组</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
 
 
   <nav id="page-nav">
@@ -674,7 +758,7 @@ console.log(&quot;dowhile语句&quot; + j);
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript入门/">JavaScript入门</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/css基础/">css基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/css处理方式/">css处理方式</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/html基础/">html基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript基础/">javascript基础</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript/">JavaScript</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript入门/">JavaScript入门</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/css基础/">css基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/css处理方式/">css处理方式</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/html基础/">html基础</a></li></ul>
     </div>
   </div>
 
@@ -684,7 +768,7 @@ console.log(&quot;dowhile语句&quot; + j);
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Array/">Array[]</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Object/">Object{}</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css3/">css3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css问题处理/">css问题处理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/div/">div</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/对象/">对象</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/循环和条件语句/">循环和条件语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数组/">数组</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/浏览器/">浏览器</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Array/">Array[]</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Object/">Object{}</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css3/">css3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css问题处理/">css问题处理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/div/">div</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/function/">function()</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaScript/">javaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数/">函数</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/对象/">对象</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/循环和条件语句/">循环和条件语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数组/">数组</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/浏览器/">浏览器</a></li></ul>
     </div>
   </div>
 
@@ -694,7 +778,7 @@ console.log(&quot;dowhile语句&quot; + j);
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Array/" style="font-size: 10px;">Array[]</a> <a href="/tags/JavaScript/" style="font-size: 17.5px;">JavaScript</a> <a href="/tags/Object/" style="font-size: 10px;">Object{}</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/css3/" style="font-size: 12.5px;">css3</a> <a href="/tags/css问题处理/" style="font-size: 15px;">css问题处理</a> <a href="/tags/div/" style="font-size: 12.5px;">div</a> <a href="/tags/html/" style="font-size: 12.5px;">html</a> <a href="/tags/javascript/" style="font-size: 12.5px;">javascript</a> <a href="/tags/web/" style="font-size: 12.5px;">web</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/对象/" style="font-size: 10px;">对象</a> <a href="/tags/循环和条件语句/" style="font-size: 10px;">循环和条件语句</a> <a href="/tags/数组/" style="font-size: 10px;">数组</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a>
+      <a href="/tags/Array/" style="font-size: 10px;">Array[]</a> <a href="/tags/JavaScript/" style="font-size: 17.5px;">JavaScript</a> <a href="/tags/Object/" style="font-size: 10px;">Object{}</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/css3/" style="font-size: 12.5px;">css3</a> <a href="/tags/css问题处理/" style="font-size: 15px;">css问题处理</a> <a href="/tags/div/" style="font-size: 12.5px;">div</a> <a href="/tags/function/" style="font-size: 10px;">function()</a> <a href="/tags/html/" style="font-size: 12.5px;">html</a> <a href="/tags/javaScript/" style="font-size: 10px;">javaScript</a> <a href="/tags/web/" style="font-size: 12.5px;">web</a> <a href="/tags/函数/" style="font-size: 10px;">函数</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/对象/" style="font-size: 10px;">对象</a> <a href="/tags/循环和条件语句/" style="font-size: 10px;">循环和条件语句</a> <a href="/tags/数组/" style="font-size: 10px;">数组</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a>
     </div>
   </div>
 
@@ -728,7 +812,7 @@ console.log(&quot;dowhile语句&quot; + j);
           </li>
         
           <li>
-            <a href="/2019/05/16/javascript-1-5/">javascript-入门之函数</a>
+            <a href="/2019/05/16/javascript-1-4/">javascript-入门之函数</a>
           </li>
         
           <li>
