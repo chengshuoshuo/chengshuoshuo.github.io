@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>javascript的基础一 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="javascript 的数据类型JavaScript基本数据类型字符串(String)          var str=a;数字  (Number)          var num=123;布尔值(Boolean)         var bol=true;未定义变量 (underfind)  var a;值为空 (null)            var string=null；非数字类型N">
+<meta name="keywords" content="javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript的基础一">
+<meta property="og:url" content="http://yoursite.com/2019/05/09/javascript-0-1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="javascript 的数据类型JavaScript基本数据类型字符串(String)          var str=a;数字  (Number)          var num=123;布尔值(Boolean)         var bol=true;未定义变量 (underfind)  var a;值为空 (null)            var string=null；非数字类型N">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-10T14:19:04.134Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javascript的基础一">
+<meta name="twitter:description" content="javascript 的数据类型JavaScript基本数据类型字符串(String)          var str=a;数字  (Number)          var num=123;布尔值(Boolean)         var bol=true;未定义变量 (underfind)  var a;值为空 (null)            var string=null；非数字类型N">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-javascript-0-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/09/javascript-0-1/" class="article-date">
+  <time datetime="2019-05-09T02:21:52.000Z" itemprop="datePublished">2019-05-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/javascript基础/">javascript基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      javascript的基础一
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="javascript-的数据类型"><a href="#javascript-的数据类型" class="headerlink" title="javascript 的数据类型"></a>javascript 的数据类型</h4><h5 id="JavaScript基本数据类型"><a href="#JavaScript基本数据类型" class="headerlink" title="JavaScript基本数据类型"></a>JavaScript基本数据类型</h5><p>字符串(String)          var str=a;<br>数字  (Number)          var num=123;<br>布尔值(Boolean)         var bol=true;<br>未定义变量 (underfind)  var a;<br>值为空 (null)            var string=null；<br>非数字类型NAN</p>
+<h6 id="查看数据类型的方法"><a href="#查看数据类型的方法" class="headerlink" title="查看数据类型的方法"></a>查看数据类型的方法</h6><p>使用typeof方法可以返回对应的数据类型，例子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var num=123;</span><br><span class="line">console.log(typeof num);//返回输出 number</span><br></pre></td></tr></table></figure>
+
+<h6 id="数据间的一些转化方法"><a href="#数据间的一些转化方法" class="headerlink" title="数据间的一些转化方法"></a>数据间的一些转化方法</h6><p>String()、Number()、Boolean()可以将数据强行转化<br>Number()在将字符串转为数字类型时会将引号去掉，如果还有字母类的字符，值为NaN；将布尔值转化为数字类型时，true是1，false是0；<br>Boolean()将字符串转化为布尔值时，字符串为空就是false，字符串有值就是true；underfind类型、null类型、NaN类型的数据由由Boolean()转化来就是false</p>
+<h6 id="数据间的运算"><a href="#数据间的运算" class="headerlink" title="数据间的运算"></a>数据间的运算</h6><p>string+number=string<br>字符串和数字间的加法是将数字转化为字符串来进行拼接</p>
+<p>string+boolean=string<br>将布尔类型转化为字符串来与之拼接</p>
+<p>number+boolean=number<br>数字类型和布尔类型的加法是将布尔类型转化成数字类型进行运算</p>
+<p>当运算符两侧有一侧是数字类型，另一侧是underfind或者NaN时，结果为NaN</p>
+<h5 id="JavaScript引用数据类型"><a href="#JavaScript引用数据类型" class="headerlink" title="JavaScript引用数据类型"></a>JavaScript引用数据类型</h5><p>数组(Array) var sttr=[];<br>对象(Object)var obj={};<br>函数(Function)</p>
+<h5 id="字符串-string-的一些基本操作方法"><a href="#字符串-string-的一些基本操作方法" class="headerlink" title="字符串(string)的一些基本操作方法"></a>字符串(string)的一些基本操作方法</h5><h6 id="获取字符串中的一段字符方法charAt-slice-substring-和substr"><a href="#获取字符串中的一段字符方法charAt-slice-substring-和substr" class="headerlink" title="获取字符串中的一段字符方法charAt()slice()substring()和substr()"></a>获取字符串中的一段字符方法charAt()slice()substring()和substr()</h6><p>js中的数据下标不是从1开始，而是从0开始的。</p>
+<p>charAt(number)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;这一段字符串&quot;;//先声明一串字符串</span><br><span class="line">var b=a.charAt(1);</span><br><span class="line">//用charAt()来获取取一段字符；从位置0开始取，位置0的字符是“这”，取到位置1为止（包含位置1），取得“这一”字符；</span><br><span class="line">console.log(b);//将获取的字符输出到控制台</span><br></pre></td></tr></table></figure>
+
+<p>slice(number1,number2)</p>
+<p>number1是从第几个位置开始，number2是在第几个位置结束但不包含number2这个位置，如下例；返回“h”；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;this is string&quot;;</span><br><span class="line">var b=a.slice(1,2);</span><br><span class="line">console.log(b);</span><br></pre></td></tr></table></figure>
+
+<p>substring(number1,number2)</p>
+<p>效果和用法同slice()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;this is string&quot;;</span><br><span class="line">var b=a.substring(1,2);</span><br><span class="line">console.log(b);</span><br></pre></td></tr></table></figure>
+
+<p>substr(number1,number2)获取字符串字符</p>
+<p>number1是从第几个位置开始，要获取从number1开始向右的number2个字符；下例子返回输出“hi”；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;this is string&quot;;</span><br><span class="line">var b=a.substr(1,2);</span><br><span class="line">console.log(b);</span><br></pre></td></tr></table></figure>
+
+<h6 id="获取字符在字符串中的位置"><a href="#获取字符在字符串中的位置" class="headerlink" title="获取字符在字符串中的位置"></a>获取字符在字符串中的位置</h6><p>indexOf(string)，获取某个字符在所属字符串中第一次出现的位置，下例返回输出“2”；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;this is string&quot;;</span><br><span class="line">var b=a.indexOf(&quot;i&quot;);</span><br><span class="line">console.log(b);</span><br></pre></td></tr></table></figure>
+
+<p>lastIndexOf(string)，获取某个字符在所属字符串周最后一次出现的位置，下例返回输出“10”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;this is sting&quot;;</span><br><span class="line">var b=a.lastIndexOf(&quot;i&quot;);</span><br><span class="line">console.log(b);</span><br></pre></td></tr></table></figure>
+
+<h6 id="将字符串强制大小写"><a href="#将字符串强制大小写" class="headerlink" title="将字符串强制大小写"></a>将字符串强制大小写</h6><p>toUpperCase(),将字符串强制大写；输出“THIS IS STRING”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;This is String&quot;;</span><br><span class="line">var b=a.toUpperCase();</span><br><span class="line">console.log(a);</span><br></pre></td></tr></table></figure>
+
+<p>toLowerCase(),将字符串强制小写；输出“this is string”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;This is String&quot;;</span><br><span class="line">var b=a.toLowerCase();</span><br><span class="line">console.log(a);</span><br></pre></td></tr></table></figure>
+
+<h5 id="数字类型数据的一些操作方法"><a href="#数字类型数据的一些操作方法" class="headerlink" title="数字类型数据的一些操作方法"></a>数字类型数据的一些操作方法</h5><ul>
+<li><p>parseInt()小数点取整数</p>
+</li>
+<li><p>parseFloat()从第一个字符开始解析直到最后一个，有两种情况会停下解析</p>
+<ul>
+<li><p>第一、是遇到无效的浮点、如空格、小数点</p>
+</li>
+<li><p>第二、是遇到非数字的字段</p>
+<ul>
+<li><p>空串就返回NaN</p>
+</li>
+<li><p>字母e、解析e前面的数字乘以10的n次方，n是e后面的数字，最后返回这个值</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Math.random()，随机值，大于等于0，小于1</p>
+</li>
+<li><p>Math.floor()向下取整数，效果同parseInt()</p>
+</li>
+<li><p>Math.abs()取数字的绝对值</p>
+</li>
+<li><p>Math.min(x,y,z)获取其中最小的数</p>
+</li>
+<li><p>Math.max()获取其中最大的数</p>
+</li>
+<li><p>Math.round(x)四舍五入</p>
+</li>
+<li><p>Math.PI获取圆周率</p>
+<h5 id="数组的声明方式"><a href="#数组的声明方式" class="headerlink" title="数组的声明方式"></a>数组的声明方式</h5><p>声明方式有两种字面量和构造函数<br>字面量如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,&quot;s&quot;,5,true];</span><br><span class="line">console.log(arr);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>构造函数声明如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr=new Array(1,&quot;s&quot;,5);</span><br><span class="line">console.log(arr);</span><br></pre></td></tr></table></figure>
+
+<p>给数组内某个位置重新赋值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr[1]=&quot;S&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>获取指定位置元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(arr[1]);</span><br></pre></td></tr></table></figure>
+
+<p>删除数组内特定元素 不改变数组长度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete arr[0];</span><br></pre></td></tr></table></figure>
+
+<p>清空数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr=[];</span><br></pre></td></tr></table></figure>
+
+<h5 id="数组-Array-的一些操作方法"><a href="#数组-Array-的一些操作方法" class="headerlink" title="数组(Array)的一些操作方法"></a>数组(Array)的一些操作方法</h5><ul>
+<li>push(string)   在数组的尾部添加元素并返回数组长度</li>
+<li>pop()            将数组的尾部元素删除并返回那个被删除的元素</li>
+<li>unshift(string)在数组的头部添加元素并返回数组长度 </li>
+<li>shift()          将数组的头部元素删除并返回那个被删除的元素</li>
+<li>slice(number1,number2)获取数组内位置从number1到位置number2(不包含number2)的元素</li>
+<li>splice(number1,number2)获取数组中位置从number1开始的number2个元素</li>
+<li>join(string)将数组内的元素转为字符串形式拼接来，string是拼接时元素间的添加元素</li>
+<li>concat(Array)将一个数组和并在另一个数组中并可以赋予给新的变量</li>
+<li>sort()数组内的元素按顺序排序</li>
+<li>reverse()数组内元素反序排列</li>
+<li>lenght获取数组长度<h6 id="push-能够在数组的尾部添加元素"><a href="#push-能够在数组的尾部添加元素" class="headerlink" title="push()能够在数组的尾部添加元素"></a>push()能够在数组的尾部添加元素</h6>push()在给数组尾部添加元素的同时还可以返回数组长度，如下<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[2,5,8,6,4];</span><br><span class="line">var brr=arr.push(5);//此时的 brr=[2,5,8,6,4,5]</span><br><span class="line">console.log(brr);//此时输出6</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h6 id="pop-将数组的尾部元素删除并返回"><a href="#pop-将数组的尾部元素删除并返回" class="headerlink" title="pop()将数组的尾部元素删除并返回"></a>pop()将数组的尾部元素删除并返回</h6><p>pop()可以把数组的最右侧元素删除并返回</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[2,5,8,9,5];</span><br><span class="line">var brr=arr.pop();// 此时的brr=[2,5,8,9]</span><br><span class="line">console.log(brr);//此时输出5</span><br></pre></td></tr></table></figure>
+
+<h6 id="unshift"><a href="#unshift" class="headerlink" title="unshift()"></a>unshift()</h6><p>unshift()在数组的最左侧添加元素并返回长度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.unshift(6);//此时的brr=[6,1,2,3,4,6]</span><br><span class="line">console.log(brr);//此时输出6</span><br></pre></td></tr></table></figure>
+
+<h6 id="shift"><a href="#shift" class="headerlink" title="shift()"></a>shift()</h6><p>shift()在数组的最左侧删除元素并返回被删除的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.shift();//此时的brr=[2,3,4,6]</span><br><span class="line">console.log(brr);//此时输出1</span><br></pre></td></tr></table></figure>
+
+<h6 id="slice"><a href="#slice" class="headerlink" title="slice()"></a>slice()</h6><p>slice(number1,number2)获取从number1位置到number2位置（不包含number2）的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.slice(1,3);//此时的brr=[2,3]</span><br><span class="line">console.log(brr);//此时输出[2,3]</span><br></pre></td></tr></table></figure>
+
+<h6 id="splice-number1-number2"><a href="#splice-number1-number2" class="headerlink" title="splice(number1,number2)"></a>splice(number1,number2)</h6><p>splice(number1,number2)，从number1位置开始向右获取number2个元素，并将数组中对应的元素删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.splice(1,3);//此时的brr=[2,3,4];arr=[1,5];</span><br><span class="line">console.log(brr);//此时输出[2,3,4]</span><br></pre></td></tr></table></figure>
+
+<h6 id="splice-number1-number2-string"><a href="#splice-number1-number2-string" class="headerlink" title="splice(number1,number2,string)"></a>splice(number1,number2,string)</h6><p>splice(number1,number2,string)，从number1位置开始向右获取number2个元素，并将数组中对应的元素删除,插入新的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.splice(1,3,&quot;4&quot;);//此时的brr=[2,3,4];arr=[1,&quot;4&quot;,5];</span><br><span class="line">console.log(brr);//此时输出[2,3,4]</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/09/javascript-0-1/" data-id="cjyjwq9qf000wacuxnynn7hrx" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/05/10/javascript-2-2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          javascript-入门之数组（Array[]）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/05/06/5-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">3d变形转换</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript入门/">JavaScript入门</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/css基础/">css基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/css处理方式/">css处理方式</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/html基础/">html基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript基础/">javascript基础</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Array/">Array[]</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Object/">Object{}</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css3/">css3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css问题处理/">css问题处理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/div/">div</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/对象/">对象</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/循环和条件语句/">循环和条件语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数组/">数组</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/浏览器/">浏览器</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Array/" style="font-size: 10px;">Array[]</a> <a href="/tags/JavaScript/" style="font-size: 17.5px;">JavaScript</a> <a href="/tags/Object/" style="font-size: 10px;">Object{}</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/css3/" style="font-size: 12.5px;">css3</a> <a href="/tags/css问题处理/" style="font-size: 15px;">css问题处理</a> <a href="/tags/div/" style="font-size: 12.5px;">div</a> <a href="/tags/html/" style="font-size: 12.5px;">html</a> <a href="/tags/javascript/" style="font-size: 12.5px;">javascript</a> <a href="/tags/web/" style="font-size: 12.5px;">web</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/对象/" style="font-size: 10px;">对象</a> <a href="/tags/循环和条件语句/" style="font-size: 10px;">循环和条件语句</a> <a href="/tags/数组/" style="font-size: 10px;">数组</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/10/09/jQuery-1-1/">jQuery-1-1</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/25/javascript-3/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/16/javascript-1-5/">javascript-入门之函数</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/16/javascript-1-3/">javascript-入门之运算符</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

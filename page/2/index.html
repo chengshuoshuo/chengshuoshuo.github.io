@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-javascript-2-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/10/javascript-2-2/" class="article-date">
+  <time datetime="2019-05-10T11:00:15.000Z" itemprop="datePublished">2019-05-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript入门/">JavaScript入门</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/10/javascript-2-2/">javascript-入门之数组（Array[]）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="创建数组并命名"><a href="#创建数组并命名" class="headerlink" title="创建数组并命名"></a>创建数组并命名</h4><h5 id="数组的声明方式"><a href="#数组的声明方式" class="headerlink" title="数组的声明方式"></a>数组的声明方式</h5><p>声明方式有两种字面量和构造函数<br>字面量如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,&quot;s&quot;,5,true];</span><br><span class="line">console.log(arr);</span><br></pre></td></tr></table></figure>
+
+<p>构造函数声明如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr=new Array(1,&quot;s&quot;,5);</span><br><span class="line">console.log(arr);</span><br></pre></td></tr></table></figure>
+
+<p>给数组内某个位置重新赋值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr[1]=&quot;S&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>获取指定位置元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(arr[1]);</span><br></pre></td></tr></table></figure>
+
+<p>删除数组内特定元素 不改变数组长度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete arr[0];</span><br></pre></td></tr></table></figure>
+
+<p>清空数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr=[];</span><br></pre></td></tr></table></figure>
+
+<p>判断arr是否是一个数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">arr=[1,2,3,4]</span><br><span class="line">var boolearn=Array.isArray(arr)//判断arr是否数组并赋予boolearn</span><br><span class="line">console.log(boolearn);//将判断打印出来是true；</span><br></pre></td></tr></table></figure>
+
+<p>从类数组或可迭代对象中创建一个新的数组实例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = &quot;abacf&quot;;</span><br><span class="line">var arr = Array.from(a);</span><br><span class="line">console.log(arr);</span><br></pre></td></tr></table></figure>
+
+<p>把各种类型数据放在一起组成数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr2 = Array.of(2, 3, 2, &quot;d&quot;, &quot;a&quot;, true, false);</span><br><span class="line">console.log(Array.isArray(arr2))//打印出来true</span><br></pre></td></tr></table></figure>
+
+<h5 id="数组-Array-的一些操作方法"><a href="#数组-Array-的一些操作方法" class="headerlink" title="数组(Array)的一些操作方法"></a>数组(Array)的一些操作方法</h5><ul>
+<li>push(string)   在数组的尾部添加元素并返回数组长度</li>
+<li>pop()            将数组的尾部元素删除并返回那个被删除的元素</li>
+<li>unshift(string)在数组的头部添加元素并返回数组长度 </li>
+<li>shift()          将数组的头部元素删除并返回那个被删除的元素</li>
+<li>slice(num1,num2)获取数组内位置从num1到位置num2(不包含num2)的元素返回</li>
+<li>splice(num1,num2)截取数组中位置从num1开始的num2个元素返回</li>
+<li>splice(num1,num2,str3)截取数组中位置从num1开始的num2个元素返回，并将str3插入数组</li>
+<li>join(string)将数组内的元素转为字符串形式拼接来，string是拼接时元素间的添加元素</li>
+<li>concat(Array)将一个数组和并在另一个数组中并可以赋予给新的变量</li>
+<li>sort()数组内的元素按顺序排序</li>
+<li>reverse()数组内元素反序排列</li>
+<li>lenght获取数组长度</li>
+<li><h6 id="push-能够在数组的尾部添加元素"><a href="#push-能够在数组的尾部添加元素" class="headerlink" title="push()能够在数组的尾部添加元素"></a>push()能够在数组的尾部添加元素</h6>push()在给数组尾部添加元素的同时还可以返回数组长度，如下<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[2,5,8,6,4];</span><br><span class="line">var brr=arr.push(5);//此时的 brr=[2,5,8,6,4,5]</span><br><span class="line">console.log(brr);//此时输出6</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h6 id="pop-将数组的尾部元素删除并返回"><a href="#pop-将数组的尾部元素删除并返回" class="headerlink" title="pop()将数组的尾部元素删除并返回"></a>pop()将数组的尾部元素删除并返回</h6><p>pop()可以把数组的最右侧元素删除并返回</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[2,5,8,9,5];</span><br><span class="line">var brr=arr.pop();// 此时的brr=[2,5,8,9]</span><br><span class="line">console.log(brr);//此时输出5</span><br></pre></td></tr></table></figure>
+
+<h6 id="unshift"><a href="#unshift" class="headerlink" title="unshift()"></a>unshift()</h6><p>unshift()在数组的最左侧添加元素并返回长度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.unshift(6);//此时的brr=[6,1,2,3,4,6]</span><br><span class="line">console.log(brr);//此时输出6</span><br></pre></td></tr></table></figure>
+
+<h6 id="shift"><a href="#shift" class="headerlink" title="shift()"></a>shift()</h6><p>shift()在数组的最左侧删除元素并返回被删除的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.shift();//此时的brr=[2,3,4,6]</span><br><span class="line">console.log(brr);//此时输出1</span><br></pre></td></tr></table></figure>
+
+<h6 id="slice"><a href="#slice" class="headerlink" title="slice()"></a>slice()</h6><p>slice(number1,number2)获取从number1位置到number2位置（不包含number2）的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.slice(1,3);//此时的brr=[2,3]</span><br><span class="line">console.log(brr);//此时输出[2,3]</span><br></pre></td></tr></table></figure>
+
+<h6 id="splice-number1-number2"><a href="#splice-number1-number2" class="headerlink" title="splice(number1,number2)"></a>splice(number1,number2)</h6><p>splice(number1,number2)，从number1位置开始向右获取number2个元素，并将数组中对应的元素删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.splice(1,3);//此时的brr=[2,3,4];arr=[1,5];</span><br><span class="line">console.log(brr);//此时输出[2,3,4]</span><br></pre></td></tr></table></figure>
+
+<h6 id="splice-number1-number2-string"><a href="#splice-number1-number2-string" class="headerlink" title="splice(number1,number2,string)"></a>splice(number1,number2,string)</h6><p>splice(number1,number2,string)，从number1位置开始向右获取number2个元素，并将数组中对应的元素删除,插入新的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.splice(1,3,&quot;4&quot;);//此时的brr=[2,3,4];arr=[1,&quot;4&quot;,5];</span><br><span class="line">console.log(brr);//此时输出[2,3,4]</span><br></pre></td></tr></table></figure>
+
+<h6 id="创建二维数组"><a href="#创建二维数组" class="headerlink" title="创建二维数组"></a>创建二维数组</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">var myarr=[[1,2],[1,2,3,4,5]]</span><br><span class="line">document.write(myarr);</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="带回调函数的一些方法"><a href="#带回调函数的一些方法" class="headerlink" title="带回调函数的一些方法"></a>带回调函数的一些方法</h5><p>带回调函数的方法语法大致为<code>Array.map(function(currentValue,index,array){},thisArg)</code>，<code>currentValue</code>是数组中正在处理的当前元素，<code>index</code>是可选的，是数组中正在处理的当前元素的索引；<code>array</code>是可选的，是forEach()方法正在操作的数组；thisArg是可选参数；当执行回调函数时用作 <code>this</code> 的值(参考对象)。</p>
+<h6 id="常用的带回调函数的方法"><a href="#常用的带回调函数的方法" class="headerlink" title="常用的带回调函数的方法"></a>常用的带回调函数的方法</h6><ul>
+<li>Array.map()</li>
+<li>Array.forEach()</li>
+<li>Array.every()</li>
+<li>Array.some()</li>
+<li>Array.find()</li>
+<li>Array.findIndex()</li>
+<li>Array.filter()</li>
+<li>reduce()</li>
+</ul>
+<h6 id="Array-map-方法的依次处理数组元素"><a href="#Array-map-方法的依次处理数组元素" class="headerlink" title="Array.map()方法的依次处理数组元素"></a>Array.map()方法的依次处理数组元素</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4];</span><br><span class="line">var arr2=arr.map(function(ele,index,array)&#123;//ele指元素值 index指下标 array指原数组本身</span><br><span class="line">    return Math.pow(ele,3)//Math.pow是ele的3次方运算</span><br><span class="line">&#125;)</span><br><span class="line">console.log(arr2);//打印出 [1, 8, 27, 64]</span><br></pre></td></tr></table></figure>
+
+<p>或者可以这样写，一下是ES6的写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4];</span><br><span class="line">var arr2=arr.map((ele,index,array)=&gt;&#123;//ele指元素值 index指下标 array指原数组本身</span><br><span class="line">    return Math.pow(ele,3)//Math.pow是ele的3次方运算</span><br><span class="line">&#125;)</span><br><span class="line">console.log(arr2);//打印出 [1, 8, 27, 64]</span><br></pre></td></tr></table></figure>
+
+<p>Array.forEach()将数组元素遍历会为内部每个元素都调用函数 但是不能被调用 只会返回undefined</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3, 4];</span><br><span class="line">	arr.map(function(e, i, a) &#123;</span><br><span class="line">		var ele = Math.pow(e, 2)</span><br><span class="line">		console.log(ele);</span><br><span class="line">	&#125;)</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/10/javascript-2-2/" data-id="cjyjwq9qu001lacuxd7lz168g" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Array/">Array[]</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数组/">数组</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-javascript-0-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/09/javascript-0-1/" class="article-date">
+  <time datetime="2019-05-09T02:21:52.000Z" itemprop="datePublished">2019-05-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/javascript基础/">javascript基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/09/javascript-0-1/">javascript的基础一</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="javascript-的数据类型"><a href="#javascript-的数据类型" class="headerlink" title="javascript 的数据类型"></a>javascript 的数据类型</h4><h5 id="JavaScript基本数据类型"><a href="#JavaScript基本数据类型" class="headerlink" title="JavaScript基本数据类型"></a>JavaScript基本数据类型</h5><p>字符串(String)          var str=a;<br>数字  (Number)          var num=123;<br>布尔值(Boolean)         var bol=true;<br>未定义变量 (underfind)  var a;<br>值为空 (null)            var string=null；<br>非数字类型NAN</p>
+<h6 id="查看数据类型的方法"><a href="#查看数据类型的方法" class="headerlink" title="查看数据类型的方法"></a>查看数据类型的方法</h6><p>使用typeof方法可以返回对应的数据类型，例子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var num=123;</span><br><span class="line">console.log(typeof num);//返回输出 number</span><br></pre></td></tr></table></figure>
+
+<h6 id="数据间的一些转化方法"><a href="#数据间的一些转化方法" class="headerlink" title="数据间的一些转化方法"></a>数据间的一些转化方法</h6><p>String()、Number()、Boolean()可以将数据强行转化<br>Number()在将字符串转为数字类型时会将引号去掉，如果还有字母类的字符，值为NaN；将布尔值转化为数字类型时，true是1，false是0；<br>Boolean()将字符串转化为布尔值时，字符串为空就是false，字符串有值就是true；underfind类型、null类型、NaN类型的数据由由Boolean()转化来就是false</p>
+<h6 id="数据间的运算"><a href="#数据间的运算" class="headerlink" title="数据间的运算"></a>数据间的运算</h6><p>string+number=string<br>字符串和数字间的加法是将数字转化为字符串来进行拼接</p>
+<p>string+boolean=string<br>将布尔类型转化为字符串来与之拼接</p>
+<p>number+boolean=number<br>数字类型和布尔类型的加法是将布尔类型转化成数字类型进行运算</p>
+<p>当运算符两侧有一侧是数字类型，另一侧是underfind或者NaN时，结果为NaN</p>
+<h5 id="JavaScript引用数据类型"><a href="#JavaScript引用数据类型" class="headerlink" title="JavaScript引用数据类型"></a>JavaScript引用数据类型</h5><p>数组(Array) var sttr=[];<br>对象(Object)var obj={};<br>函数(Function)</p>
+<h5 id="字符串-string-的一些基本操作方法"><a href="#字符串-string-的一些基本操作方法" class="headerlink" title="字符串(string)的一些基本操作方法"></a>字符串(string)的一些基本操作方法</h5><h6 id="获取字符串中的一段字符方法charAt-slice-substring-和substr"><a href="#获取字符串中的一段字符方法charAt-slice-substring-和substr" class="headerlink" title="获取字符串中的一段字符方法charAt()slice()substring()和substr()"></a>获取字符串中的一段字符方法charAt()slice()substring()和substr()</h6><p>js中的数据下标不是从1开始，而是从0开始的。</p>
+<p>charAt(number)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;这一段字符串&quot;;//先声明一串字符串</span><br><span class="line">var b=a.charAt(1);</span><br><span class="line">//用charAt()来获取取一段字符；从位置0开始取，位置0的字符是“这”，取到位置1为止（包含位置1），取得“这一”字符；</span><br><span class="line">console.log(b);//将获取的字符输出到控制台</span><br></pre></td></tr></table></figure>
+
+<p>slice(number1,number2)</p>
+<p>number1是从第几个位置开始，number2是在第几个位置结束但不包含number2这个位置，如下例；返回“h”；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;this is string&quot;;</span><br><span class="line">var b=a.slice(1,2);</span><br><span class="line">console.log(b);</span><br></pre></td></tr></table></figure>
+
+<p>substring(number1,number2)</p>
+<p>效果和用法同slice()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;this is string&quot;;</span><br><span class="line">var b=a.substring(1,2);</span><br><span class="line">console.log(b);</span><br></pre></td></tr></table></figure>
+
+<p>substr(number1,number2)获取字符串字符</p>
+<p>number1是从第几个位置开始，要获取从number1开始向右的number2个字符；下例子返回输出“hi”；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;this is string&quot;;</span><br><span class="line">var b=a.substr(1,2);</span><br><span class="line">console.log(b);</span><br></pre></td></tr></table></figure>
+
+<h6 id="获取字符在字符串中的位置"><a href="#获取字符在字符串中的位置" class="headerlink" title="获取字符在字符串中的位置"></a>获取字符在字符串中的位置</h6><p>indexOf(string)，获取某个字符在所属字符串中第一次出现的位置，下例返回输出“2”；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;this is string&quot;;</span><br><span class="line">var b=a.indexOf(&quot;i&quot;);</span><br><span class="line">console.log(b);</span><br></pre></td></tr></table></figure>
+
+<p>lastIndexOf(string)，获取某个字符在所属字符串周最后一次出现的位置，下例返回输出“10”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;this is sting&quot;;</span><br><span class="line">var b=a.lastIndexOf(&quot;i&quot;);</span><br><span class="line">console.log(b);</span><br></pre></td></tr></table></figure>
+
+<h6 id="将字符串强制大小写"><a href="#将字符串强制大小写" class="headerlink" title="将字符串强制大小写"></a>将字符串强制大小写</h6><p>toUpperCase(),将字符串强制大写；输出“THIS IS STRING”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;This is String&quot;;</span><br><span class="line">var b=a.toUpperCase();</span><br><span class="line">console.log(a);</span><br></pre></td></tr></table></figure>
+
+<p>toLowerCase(),将字符串强制小写；输出“this is string”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a=&quot;This is String&quot;;</span><br><span class="line">var b=a.toLowerCase();</span><br><span class="line">console.log(a);</span><br></pre></td></tr></table></figure>
+
+<h5 id="数字类型数据的一些操作方法"><a href="#数字类型数据的一些操作方法" class="headerlink" title="数字类型数据的一些操作方法"></a>数字类型数据的一些操作方法</h5><ul>
+<li><p>parseInt()小数点取整数</p>
+</li>
+<li><p>parseFloat()从第一个字符开始解析直到最后一个，有两种情况会停下解析</p>
+<ul>
+<li><p>第一、是遇到无效的浮点、如空格、小数点</p>
+</li>
+<li><p>第二、是遇到非数字的字段</p>
+<ul>
+<li><p>空串就返回NaN</p>
+</li>
+<li><p>字母e、解析e前面的数字乘以10的n次方，n是e后面的数字，最后返回这个值</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Math.random()，随机值，大于等于0，小于1</p>
+</li>
+<li><p>Math.floor()向下取整数，效果同parseInt()</p>
+</li>
+<li><p>Math.abs()取数字的绝对值</p>
+</li>
+<li><p>Math.min(x,y,z)获取其中最小的数</p>
+</li>
+<li><p>Math.max()获取其中最大的数</p>
+</li>
+<li><p>Math.round(x)四舍五入</p>
+</li>
+<li><p>Math.PI获取圆周率</p>
+<h5 id="数组的声明方式"><a href="#数组的声明方式" class="headerlink" title="数组的声明方式"></a>数组的声明方式</h5><p>声明方式有两种字面量和构造函数<br>字面量如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,&quot;s&quot;,5,true];</span><br><span class="line">console.log(arr);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>构造函数声明如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr=new Array(1,&quot;s&quot;,5);</span><br><span class="line">console.log(arr);</span><br></pre></td></tr></table></figure>
+
+<p>给数组内某个位置重新赋值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr[1]=&quot;S&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>获取指定位置元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(arr[1]);</span><br></pre></td></tr></table></figure>
+
+<p>删除数组内特定元素 不改变数组长度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete arr[0];</span><br></pre></td></tr></table></figure>
+
+<p>清空数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr=[];</span><br></pre></td></tr></table></figure>
+
+<h5 id="数组-Array-的一些操作方法"><a href="#数组-Array-的一些操作方法" class="headerlink" title="数组(Array)的一些操作方法"></a>数组(Array)的一些操作方法</h5><ul>
+<li>push(string)   在数组的尾部添加元素并返回数组长度</li>
+<li>pop()            将数组的尾部元素删除并返回那个被删除的元素</li>
+<li>unshift(string)在数组的头部添加元素并返回数组长度 </li>
+<li>shift()          将数组的头部元素删除并返回那个被删除的元素</li>
+<li>slice(number1,number2)获取数组内位置从number1到位置number2(不包含number2)的元素</li>
+<li>splice(number1,number2)获取数组中位置从number1开始的number2个元素</li>
+<li>join(string)将数组内的元素转为字符串形式拼接来，string是拼接时元素间的添加元素</li>
+<li>concat(Array)将一个数组和并在另一个数组中并可以赋予给新的变量</li>
+<li>sort()数组内的元素按顺序排序</li>
+<li>reverse()数组内元素反序排列</li>
+<li>lenght获取数组长度<h6 id="push-能够在数组的尾部添加元素"><a href="#push-能够在数组的尾部添加元素" class="headerlink" title="push()能够在数组的尾部添加元素"></a>push()能够在数组的尾部添加元素</h6>push()在给数组尾部添加元素的同时还可以返回数组长度，如下<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[2,5,8,6,4];</span><br><span class="line">var brr=arr.push(5);//此时的 brr=[2,5,8,6,4,5]</span><br><span class="line">console.log(brr);//此时输出6</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h6 id="pop-将数组的尾部元素删除并返回"><a href="#pop-将数组的尾部元素删除并返回" class="headerlink" title="pop()将数组的尾部元素删除并返回"></a>pop()将数组的尾部元素删除并返回</h6><p>pop()可以把数组的最右侧元素删除并返回</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[2,5,8,9,5];</span><br><span class="line">var brr=arr.pop();// 此时的brr=[2,5,8,9]</span><br><span class="line">console.log(brr);//此时输出5</span><br></pre></td></tr></table></figure>
+
+<h6 id="unshift"><a href="#unshift" class="headerlink" title="unshift()"></a>unshift()</h6><p>unshift()在数组的最左侧添加元素并返回长度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.unshift(6);//此时的brr=[6,1,2,3,4,6]</span><br><span class="line">console.log(brr);//此时输出6</span><br></pre></td></tr></table></figure>
+
+<h6 id="shift"><a href="#shift" class="headerlink" title="shift()"></a>shift()</h6><p>shift()在数组的最左侧删除元素并返回被删除的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.shift();//此时的brr=[2,3,4,6]</span><br><span class="line">console.log(brr);//此时输出1</span><br></pre></td></tr></table></figure>
+
+<h6 id="slice"><a href="#slice" class="headerlink" title="slice()"></a>slice()</h6><p>slice(number1,number2)获取从number1位置到number2位置（不包含number2）的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.slice(1,3);//此时的brr=[2,3]</span><br><span class="line">console.log(brr);//此时输出[2,3]</span><br></pre></td></tr></table></figure>
+
+<h6 id="splice-number1-number2"><a href="#splice-number1-number2" class="headerlink" title="splice(number1,number2)"></a>splice(number1,number2)</h6><p>splice(number1,number2)，从number1位置开始向右获取number2个元素，并将数组中对应的元素删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.splice(1,3);//此时的brr=[2,3,4];arr=[1,5];</span><br><span class="line">console.log(brr);//此时输出[2,3,4]</span><br></pre></td></tr></table></figure>
+
+<h6 id="splice-number1-number2-string"><a href="#splice-number1-number2-string" class="headerlink" title="splice(number1,number2,string)"></a>splice(number1,number2,string)</h6><p>splice(number1,number2,string)，从number1位置开始向右获取number2个元素，并将数组中对应的元素删除,插入新的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,4,5];</span><br><span class="line">var brr=arr.splice(1,3,&quot;4&quot;);//此时的brr=[2,3,4];arr=[1,&quot;4&quot;,5];</span><br><span class="line">console.log(brr);//此时输出[2,3,4]</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/09/javascript-0-1/" data-id="cjyjwq9qf000wacuxnynn7hrx" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-5-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/06/5-2/" class="article-date">
+  <time datetime="2019-05-06T12:36:51.000Z" itemprop="datePublished">2019-05-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/css基础/">css基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/06/5-2/">3d变形转换</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="css3中的3d变形转换"><a href="#css3中的3d变形转换" class="headerlink" title="css3中的3d变形转换"></a>css3中的3d变形转换</h4><p>3d变形转换和2d变形转换差不多</p>
+<h5 id="3d的旋转"><a href="#3d的旋转" class="headerlink" title="3d的旋转"></a>3d的旋转</h5><p>transform:rotate3d(1，0，0，360deg)</p>
+<p>x 为屏幕向右水平为正方向 y为屏幕向下垂直为正方向 z为垂直屏幕向外为正方向</p>
+<p>前三个值说明绕哪个轴旋转，第四个值是旋转角度</p>
+<h5 id="3d的缩放"><a href="#3d的缩放" class="headerlink" title="3d的缩放"></a>3d的缩放</h5><p>transform: scale3d(1.2, 1.2, 0)</p>
+<h5 id="3d的平移"><a href="#3d的平移" class="headerlink" title="3d的平移"></a>3d的平移</h5><p>transform: translate3d(20px, 20px, 120px);</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/06/5-2/" data-id="cjyjwq9q6000jacuxti5iobf6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css3/">css3</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-5-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/06/5-1/" class="article-date">
+  <time datetime="2019-05-06T12:01:54.000Z" itemprop="datePublished">2019-05-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/css基础/">css基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/06/5-1/">2d变形转换</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="css3中的2d变换"><a href="#css3中的2d变换" class="headerlink" title="css3中的2d变换"></a>css3中的2d变换</h4><p>transform属性带来了2d变换效果</p>
+<p>rotate(180deg) 旋转</p>
+<p>translate(100px,100px)平移</p>
+<p>scale(1.2)缩放</p>
+<p>skew(30deg,30deg)倾斜</p>
+<p>makrix()以上三个属性的集合简写，有六个值</p>
+<h5 id="2d旋转"><a href="#2d旋转" class="headerlink" title="2d旋转"></a>2d旋转</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.box&#123;</span><br><span class="line">    width:100px;</span><br><span class="line">    height:100px;</span><br><span class="line">    border:1px solid red;</span><br><span class="line">&#125;</span><br><span class="line">.box:hover&#123;</span><br><span class="line">    transform:rotate(90deg);&lt;!--旋转90度--&gt;</span><br><span class="line">    transform-origin:100px 100px;&lt;!--变换的中心点为div的元素的右下角--&gt;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;div class=&quot;box&quot;&gt;&lt;/box&gt;</span><br></pre></td></tr></table></figure>
+
+<p>平移和缩放都和旋转相差不多；</p>
+<h5 id="makrix-集合了旋转、缩放、平移、倾斜的属性"><a href="#makrix-集合了旋转、缩放、平移、倾斜的属性" class="headerlink" title="makrix()集合了旋转、缩放、平移、倾斜的属性"></a>makrix()集合了旋转、缩放、平移、倾斜的属性</h5><p>makrix()有着六个值 即：</p>
+<p>makrix(a,b,c,d,e,f)，六个值默认为0，也就是没有变化</p>
+<p>a 和d 分别是宽和高的缩放比，可以填入数值，等同于scole(x,y)；</p>
+<p>b 和c 分别是宽和高两对边相对x轴、y轴的倾斜值，可以填入数值，不能填入角度，可以等同于skew(x,y)；</p>
+<p>当b+c=0时，元素的两条边夹角为90度，可以等同于rotate()；</p>
+<p>e和f 分别是元素在x轴，y轴的偏移量，可以填入数值，等同于translate(x,y);</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/06/5-1/" data-id="cjyjwq9qb000pacuxfiaetufs" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css3/">css3</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-4-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/29/4-1/" class="article-date">
+  <time datetime="2019-04-29T12:24:27.000Z" itemprop="datePublished">2019-04-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/css基础/">css基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/29/4-1/">flex弹性布局</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="flex弹性布局是什么"><a href="#flex弹性布局是什么" class="headerlink" title="flex弹性布局是什么"></a>flex弹性布局是什么</h4><h4 id="一、flex布局是什么"><a href="#一、flex布局是什么" class="headerlink" title="一、flex布局是什么"></a>一、flex布局是什么</h4><p>Flex是Flexible Box的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性。</p>
+<p>任何一个容器都可以指定为Flex布局。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  display: flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>行内元素也可以指定为flex布局</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  display: inline-flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中，具有webkit内核的浏览器，必须加上webkit的前缀</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">  display: -webkit-flex; /* Safari */</span><br><span class="line">  display: flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注，设为Flex布局以后，子元素的float、clear和vertical-align样式属性都会失效。</p>
+<h4 id="二、概念"><a href="#二、概念" class="headerlink" title="二、概念"></a>二、概念</h4><p>采用了flex的元素或div，称之为“flex容器（flex container）”，也叫“容器”，它的所有直接子元素自动成为项目成员（flex item），简称“项目”。</p>
+<p>容器中默认有着两条轴，一条主轴，默认为水平方向；一条与主轴相互垂直的交叉轴；默认为垂直于水平方向。</p>
+<h4 id="三、容器的属性"><a href="#三、容器的属性" class="headerlink" title="三、容器的属性"></a>三、容器的属性</h4><p>一下6个属性可以设置在容器上。</p>
+<ul>
+<li>flex-direction</li>
+<li>flex-wrap</li>
+<li>flex</li>
+<li>justify-content</li>
+<li>align-items</li>
+<li>align-content</li>
+</ul>
+<h5 id="3-1-flex-direction属性"><a href="#3-1-flex-direction属性" class="headerlink" title="3.1 flex-direction属性"></a>3.1 flex-direction属性</h5><p>flex-direction决定主轴的方向（即项目的排列方向）</p>
+<p>它有着四个值</p>
+<ul>
+<li>row (默认值) :主轴为水平方向，由左至右</li>
+<li>row-reverse:主轴为水平方向，由右至左</li>
+<li>column:主轴为垂直方向，有上至下</li>
+<li>column:主轴为垂直方向，由下至上 </li>
+</ul>
+<h5 id="3-2-flex-wrap属性"><a href="#3-2-flex-wrap属性" class="headerlink" title="3.2 flex-wrap属性"></a>3.2 flex-wrap属性</h5><p>flex-wrap决定项目的换行方式</p>
+<ul>
+<li>nowrap（默认值）不换行</li>
+<li>wrap 换行 第一行在上面</li>
+<li>wrap-reverse 第一行在最下面</li>
+</ul>
+<h5 id="3-3flex-flow属性"><a href="#3-3flex-flow属性" class="headerlink" title="3.3flex-flow属性"></a>3.3flex-flow属性</h5><p>flex-flow是flex-direction和flex-wrap的简写 默认值为row nowrap</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">	flex-flow:&lt;flex-direction&gt; &lt;flex-wrap&gt;;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-4justify-content属性"><a href="#3-4justify-content属性" class="headerlink" title="3.4justify-content属性"></a>3.4justify-content属性</h5><p>justify-content定义着项目在主轴上的对齐方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">    justify-content:flex-start|flex-end|center|space-between|space-around;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注，是在“主轴”上的对齐，当flex-direction的值为row时，justify-content:center使得项目在容器中的表现和使用了text-align:center文本在容器中的表现的极为相似的；当flex-direction的值为column是，justify-content:center在容器中表现为上下居中</p>
+<p>注，只有在项目在主轴上的长度之和小于容器才可以明显看出效果</p>
+<p>它可能取5个值，具体对齐方式与轴的方向有关。下面假设主轴为从左到右。</p>
+<ul>
+<li><p>flex-start（默认值）：左对齐</p>
+</li>
+<li><p>flex-end：右对齐</p>
+</li>
+<li><p>center： 居中</p>
+</li>
+<li><p>spac-between：两端对齐，项目之间的间隔都相等。</p>
+</li>
+<li><p>space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</p>
+</li>
+</ul>
+<h5 id="3-5-align-items属性"><a href="#3-5-align-items属性" class="headerlink" title="3.5 align-items属性"></a>3.5 align-items属性</h5><p>align-items属性定义项目在交叉轴上如何对齐。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box &#123;</span><br><span class="line">  align-items: flex-start | flex-end | center | baseline | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>它可能取5个值。具体的对齐方式与交叉轴的方向有关，下面假设交叉轴从上到下。</p>
+<ul>
+<li><p>flex-start：交叉轴的起点对齐。</p>
+</li>
+<li><p>flex-end：交叉轴的终点对齐。</p>
+</li>
+<li><p>center：交叉轴的中点对齐。</p>
+</li>
+<li><p>baseline: 项目的第一行文字的基线对齐。</p>
+</li>
+<li><p>stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。</p>
+</li>
+</ul>
+<h5 id="3-6-align-content属性"><a href="#3-6-align-content属性" class="headerlink" title="3.6 align-content属性"></a>3.6 align-content属性</h5><p>align-content属性定义了多根轴线(即多行项目)的对齐方式。如果项目只有一根轴线，该属性不起作用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box &#123;</span><br><span class="line">  align-content: flex-start | flex-end | center | space-between | space-around | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>该属性可能取6个值。</p>
+<ul>
+<li>flex-start：与交叉轴的起点对齐。</li>
+<li>flex-end：与交叉轴的终点对齐。</li>
+<li>center：与交叉轴的中点对齐。</li>
+<li>space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。</li>
+<li>space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。</li>
+<li>stretch（默认值）：轴线占满整个交叉轴。</li>
+</ul>
+<h4 id="四、项目的属性"><a href="#四、项目的属性" class="headerlink" title="四、项目的属性"></a>四、项目的属性</h4><ul>
+<li>order</li>
+<li>flex-grow</li>
+<li>flex-shrink</li>
+<li>flex-basis</li>
+<li>flex</li>
+<li>align-self</li>
+</ul>
+<h5 id="4-1-order属性"><a href="#4-1-order属性" class="headerlink" title="4.1 order属性"></a>4.1 order属性</h5><p>order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.item &#123;</span><br><span class="line">  order: &lt;integer&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-2-flex-grow属性"><a href="#4-2-flex-grow属性" class="headerlink" title="4.2 flex-grow属性"></a>4.2 flex-grow属性</h5><p>flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.item &#123;</span><br><span class="line">  flex-grow: &lt;number&gt;; /* default 0 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-3-flex-shrink属性"><a href="#4-3-flex-shrink属性" class="headerlink" title="4.3 flex-shrink属性"></a>4.3 flex-shrink属性</h5><p>flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.item &#123;</span><br><span class="line">  flex-shrink: &lt;number&gt;; /* default 1 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。</p>
+<h5 id="4-4-flex-basis属性"><a href="#4-4-flex-basis属性" class="headerlink" title="4.4 flex-basis属性"></a>4.4 flex-basis属性</h5><p>flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.item &#123;</span><br><span class="line">  flex-basis: &lt;length&gt; | auto; /* default auto */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。</p>
+<h5 id="4-5-flex属性"><a href="#4-5-flex属性" class="headerlink" title="4.5 flex属性"></a>4.5 flex属性</h5><p>flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.item &#123;</span><br><span class="line">  flex: none | [ &lt;&apos;flex-grow&apos;&gt; &lt;&apos;flex-shrink&apos;&gt;? || &lt;&apos;flex-basis&apos;&gt; ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。</p>
+<p>建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。</p>
+<h5 id="4-6-align-self属性"><a href="#4-6-align-self属性" class="headerlink" title="4.6 align-self属性"></a>4.6 align-self属性</h5><p>align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.item &#123;</span><br><span class="line">  align-self: auto | flex-start | flex-end | center | baseline | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>该属性可能取6个值，除了auto，其他都与align-items属性完全</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/29/4-1/" data-id="cjyjwq9q9000macuxfdi0pv3k" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-3-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/25/3-1/" class="article-date">
+  <time datetime="2019-04-25T14:40:48.000Z" itemprop="datePublished">2019-04-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/css基础/">css基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/25/3-1/">css清除浮动方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="对于内部元素浮动-造成父元素无法获取内部元素高度而塌陷问题"><a href="#对于内部元素浮动-造成父元素无法获取内部元素高度而塌陷问题" class="headerlink" title="对于内部元素浮动 造成父元素无法获取内部元素高度而塌陷问题"></a>对于内部元素浮动 造成父元素无法获取内部元素高度而塌陷问题</h5><p>很多时候，在页面布局会用到浮动，二浮动造成的塌陷问题也是很让人头疼的<br>一下是我知道的几种处理方法<br>第一种方式<br>在浮动元素后面添加空div标签，加上属性clear:both</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=<span class="string">"clear.both"</span>&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>第二种方法<br>给父元素本身添加样式  overflow:hidden;</p>
+<p>第三种方法比较繁琐</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.box::after &#123;</span><br><span class="line">content: <span class="string">""</span>;</span><br><span class="line">display: block;</span><br><span class="line">height: 0;</span><br><span class="line">visibility: hidden;</span><br><span class="line">clear: both;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.box &#123;</span><br><span class="line">zoom: 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以上是通过创造一个新的块元素来消除浮动，最后一条代码是为了兼容ie6的。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/25/3-1/" data-id="cjyjwq9q4000hacuxzs9seqex" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css问题处理/">css问题处理</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-2-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/24/2-1/" class="article-date">
+  <time datetime="2019-04-24T14:10:35.000Z" itemprop="datePublished">2019-04-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/css基础/">css基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/24/2-1/">html基本使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="常用的语义化标签"><a href="#常用的语义化标签" class="headerlink" title="常用的语义化标签"></a>常用的语义化标签</h4><p>常见的语义化标签有</p>
+<p><code>&lt;del&gt;&lt;/del&gt;(删除线效果)、&lt;strong&gt;&lt;/strong&gt;(加粗效果)</code><br>还有一般标签<br><code>&lt;i&gt;&lt;/i&gt;(删除)、&lt;b&gt;&lt;/b&gt;(加粗)；</code></p>
+<p>用css实现删除效果</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">text-decoration:line-though;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="块元素和行元素和行内块元素"><a href="#块元素和行元素和行内块元素" class="headerlink" title="块元素和行元素和行内块元素"></a>块元素和行元素和行内块元素</h4><h5 id="块元素的特点"><a href="#块元素的特点" class="headerlink" title="块元素的特点"></a>块元素的特点</h5><ul>
+<li>1.独占一行 </li>
+<li>2.不设置宽高 宽度等于父元素的宽度 </li>
+<li>3.高度取决于内容 由内容来填充高度</li>
+<li>4.可以设置内外边距</li>
+<li>5.多个块元素默认上下排列<br>常见的块元素 div p section h1-h6</li>
+</ul>
+<h5 id="行内元素的特点"><a href="#行内元素的特点" class="headerlink" title="行内元素的特点"></a>行内元素的特点</h5><ul>
+<li>1.不能独占一行 内容过多会出现换行显示</li>
+<li>2.不能设置宽高</li>
+<li>3.宽高取决于内容 由内容充填 内容多高元素多高 内容多宽元素多宽</li>
+<li>4.多个行内元素左右排列 宽度不够自动换行</li>
+</ul>
+<p>常见的行内元素 span del strong a</p>
+<h5 id="行内块元素的特点"><a href="#行内块元素的特点" class="headerlink" title="行内块元素的特点"></a>行内块元素的特点</h5><ul>
+<li>1.不独占一行 多个元素由左至右排列 空间不够自动换行显示</li>
+<li>2.可以设置宽高</li>
+<li>3.不设置宽高的情况下 宽高有内容充填</li>
+</ul>
+<p>常见的行内块标签 img button input</p>
+<p>行内元素和行内块元素可以给父元素设置text-align center实现居中<br><br>img不设置大小的情况下为默认大小 设置的宽或者高 对应的宽或者高就会等比例放大或缩小  如果设置的宽高不成比例就会变形</p>
+<h5 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h5><p>如下列例子</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">&lt;title&gt;&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">.tab &#123;</span><br><span class="line">border: 1px solid gray;</span><br><span class="line">/*内部边框重叠*/</span><br><span class="line">border-collapse: collapse;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.tab tr td &#123;</span><br><span class="line">width: 100px;</span><br><span class="line">height: 50px;</span><br><span class="line">text-align: center;</span><br><span class="line">line-height: 50px;</span><br><span class="line">border: 1px solid grey</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;table&gt;</span><br><span class="line">&lt;!--thead 表头--&gt;</span><br><span class="line">&lt;thead&gt;</span><br><span class="line">&lt;!--tr代表每一行--&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">&lt;!--th每一行的表格--&gt;</span><br><span class="line">&lt;th&gt;表头&lt;/th&gt;</span><br><span class="line">&lt;th&gt;表头&lt;/th&gt;</span><br><span class="line">&lt;th&gt;表头&lt;/th&gt;</span><br><span class="line">&lt;th&gt;表头&lt;/th&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;/thead&gt;</span><br><span class="line">&lt;tbody&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">&lt;td&gt;表格</span><br><span class="line">&lt;/td&gt;</span><br><span class="line">&lt;td&gt;表格</span><br><span class="line">&lt;/td&gt;</span><br><span class="line">&lt;td&gt;表格</span><br><span class="line">&lt;/td&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;/tbody&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>之实际开发中往往会省略thead、tbody、th，而使用tr、td嵌套使用</p>
+<h5 id="页面内部跳转"><a href="#页面内部跳转" class="headerlink" title="页面内部跳转"></a>页面内部跳转</h5><p>页面有时太长的就需要在页面中进行跳转<br>所需要点击的链接代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=<span class="string">"#tiaozhuan"</span>&gt;点击跳转&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>被指向的标签代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=<span class="string">"tiaozhuan"</span>&gt;跳转到达&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/24/2-1/" data-id="cjyjwq9px000dacuxqn4lupz5" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-1-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/23/1-2/" class="article-date">
+  <time datetime="2019-04-23T15:13:52.000Z" itemprop="datePublished">2019-04-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/css基础/">css基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/23/1-2/">css基础使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="css在html中的使用方式"><a href="#css在html中的使用方式" class="headerlink" title="css在html中的使用方式"></a>css在html中的使用方式</h4><h5 id="css在html有三种使用方式"><a href="#css在html有三种使用方式" class="headerlink" title="css在html有三种使用方式"></a>css在html有三种使用方式</h5><p>分别为外部插入 内部文本 内联样式（又叫行内样式）<br><br><br>一下是外部样式的插入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"css/xxx.css"</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>下面是内部样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">/*	style标签中可以用来写样式*/</span><br><span class="line">/*		选择器*/</span><br><span class="line">.name &#123;</span><br><span class="line">/*			样式名 样式值*/</span><br><span class="line">background: blue;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div class=&quot;name&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+<p>最后是行内样式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=<span class="string">"width:100px;"</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;!--其中style是属性 width是样式名 100px是样式值--&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="css在html中的基本选择器"><a href="#css在html中的基本选择器" class="headerlink" title="css在html中的基本选择器"></a>css在html中的基本选择器</h4><h5 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h5><p>类选择器又叫class选择器<br>在html文件这样写的</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p class=<span class="string">"box"</span>&gt;内容&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在css文件中的样式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">width:100px;</span><br><span class="line">height:100px;</span><br><span class="line">color:white;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>类选择器在一个页面中可以有多个，一个标签也可以有多个类选择器。</p>
+<h5 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h5><p>id选择器和类选择器不同，id选择器一个页面只能有一个，一个标签也只有一个id选择器<br>在html中的写法</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=<span class="string">"box"</span>&gt;内容&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p>css文件中的样式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#box&#123;</span></span><br><span class="line">color:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h5><p>选定一个标签</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;内容&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p>css中的样式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p&#123;</span><br><span class="line">color:blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="复合选择器"><a href="#复合选择器" class="headerlink" title="复合选择器"></a>复合选择器</h5><p>例子</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p class=<span class="string">"box"</span> id=<span class="string">"is"</span>&gt; 内容&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p>css中的样式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p.box<span class="comment">#id&#123;</span></span><br><span class="line">color:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h5><p>属性分为特有属性 如src href 和通用属性 还有下面例子的自定义属性</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">div[shuxing=<span class="string">"youshu"</span>] &#123;</span><br><span class="line">background: yellow;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;div shuxing=<span class="string">"youshu"</span>&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="其它选择器"><a href="#其它选择器" class="headerlink" title="其它选择器"></a>其它选择器</h5><p>伪元素选择器<br><code>p:nth-of-type{}</code><br>后代选择器<br><code>div p{}</code><br>并行选择器<br><code>div,p,span{}</code><br>父子选择器<br><code>div&gt;p{}</code></p>
+<h5 id="选择器的优先级"><a href="#选择器的优先级" class="headerlink" title="选择器的优先级"></a>选择器的优先级</h5><p><code>标签选择器&lt; 类名选择器 &lt;id选择器&lt;行内样式&lt;!important</code></p>
+<h5 id="伪类和伪元素"><a href="#伪类和伪元素" class="headerlink" title="伪类和伪元素"></a>伪类和伪元素</h5><p>伪类</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a:link - 正常，未访问过的链接</span><br><span class="line">a:visited - 用户已访问过的链接</span><br><span class="line">a:hover - 当用户鼠标放在链接上时</span><br><span class="line">a:active - 链接被点击的那一刻</span><br></pre></td></tr></table></figure>
+
+<p>伪元素选择器常见的有</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">p:nth-of-<span class="function"><span class="title">type</span></span>()&#123;&#125;</span><br><span class="line">p:nth-last-of-<span class="function"><span class="title">type</span></span>()&#123;&#125;</span><br><span class="line">p:after</span><br><span class="line">p:before</span><br><span class="line">p:nth-child()</span><br></pre></td></tr></table></figure>
+
+<h4 id="css基本样式"><a href="#css基本样式" class="headerlink" title="css基本样式"></a>css基本样式</h4><p>字体样式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">font-style:italic;</span><br><span class="line">/*italic表示斜体*/</span><br></pre></td></tr></table></figure>
+
+<p>字体颜色</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color:red</span><br></pre></td></tr></table></figure>
+
+<p>文本装饰</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">text-decoration:</span><br><span class="line">/*          </span><br><span class="line">none 	默认。定义标准的文本。</span><br><span class="line">underline 	定义文本下的一条线。</span><br><span class="line">overline 	定义文本上的一条线。</span><br><span class="line">line-through 	定义穿过文本下的一条线。</span><br><span class="line">blink 	定义闪烁的文本。</span><br><span class="line">inherit 	规定应该从父元素继承 text-decoration 属性的值。</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+
+<p>文本对齐方式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-align:left/center/right;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/23/1-2/" data-id="cjyjwq9pu000bacuxufc1ivtf" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-1-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/23/1-1/" class="article-date">
+  <time datetime="2019-04-23T09:31:56.000Z" itemprop="datePublished">2019-04-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/html基础/">html基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/23/1-1/">html基础介绍</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="html简介"><a href="#html简介" class="headerlink" title="html简介"></a>html简介</h4><h5 id="HTML是什么"><a href="#HTML是什么" class="headerlink" title="HTML是什么"></a>HTML是什么</h5><ul>
+<li>html hyer text markup language  超文本标记语言</li>
+<li>xml 可扩展的标记语言</li>
+<li>html是xml的扩展语言 用于设计语言 不算是编程语言</li>
+<li>html5是html的第五个版本 他相比之前扩展了一些新功能 </li>
+<li>狭义上讲html5是html的第五个版本 广义上将html5指的是新一代web开发技术的综和 包括html5 css3 es6</li>
+<li>纯文本文件 文件中所有数据都是文本数据 例如txt </li>
+<li>开发工具 vscode轻量级编辑器 便于安装 丰富的可扩展插件 谷歌 火狐 等</li>
+<li>一个网页本质就是html文件 包含一段html文本 本质就是一个纯文本文件 文本编辑器可以直接打开 看到源代码<h4 id="html的标签组成"><a href="#html的标签组成" class="headerlink" title="html的标签组成"></a>html的标签组成</h4><h5 id="html-的注释"><a href="#html-的注释" class="headerlink" title="html 的注释"></a>html 的注释</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 被注释内容  --&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h5 id="html的基本标签组成"><a href="#html的基本标签组成" class="headerlink" title="html的基本标签组成"></a>html的基本标签组成</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--注释：代码的解释文本，不会作为代码运行--&gt;</span><br><span class="line">&lt;!--1.注释可以作为代码的说明，供自己或者他人观看理解代码--&gt;</span><br><span class="line">&lt;!--2.代码注释后 代码将不再执行 方便后期的代码删除和还原代码--&gt;</span><br><span class="line">&lt;!--3.初学者的笔记--&gt;</span><br><span class="line">&lt;!--html是一个页面的根标签 一个页面有且只有一个html标签--&gt;</span><br><span class="line">&lt;!--head是一个页面的头部标签 用于记录本页面的基本信息 比如页面的字符集 页面标题等--&gt;</span><br><span class="line">&lt;!--head标签内部内容是不显示页面中的--&gt;</span><br><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;!--meta标签 用于设置页面的元数据	例如页面的字符集 页面的图标等--&gt;</span><br><span class="line">&lt;!--cherset用于声明当前页面的编码方式--&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--title标题 用于设置页面的标题--&gt;</span><br><span class="line">&lt;title&gt;&lt;/title&gt;</span><br><span class="line">&lt;!--style标签中用来写css样式--&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!--body是页面的主标签 body中的内容显示在页面上--&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="html的结构组成"><a href="#html的结构组成" class="headerlink" title="html的结构组成"></a>html的结构组成</h4><h5 id="html-标签按照组成结构分为单标签和双标签"><a href="#html-标签按照组成结构分为单标签和双标签" class="headerlink" title="html 标签按照组成结构分为单标签和双标签"></a>html 标签按照组成结构分为单标签和双标签</h5><h6 id="单标签"><a href="#单标签" class="headerlink" title="单标签"></a>单标签</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;br&gt;&lt;hr/&gt;</span><br><span class="line">在传统的html版本中 单标签中需要添加斜杠/</span><br><span class="line">html5后就不再需要添加斜杆/</span><br></pre></td></tr></table></figure>
+
+<h6 id="双标签"><a href="#双标签" class="headerlink" title="双标签"></a>双标签</h6><p>前一个标签叫开始标签后一个标签叫闭合标签</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;xxxx&gt;&lt;/xxxX&gt;</span><br><span class="line">注意 单标签和双标签的斜杠位置</span><br></pre></td></tr></table></figure>
+
+<h5 id="html标签按照内容可以分为-标签名-属性-内容"><a href="#html标签按照内容可以分为-标签名-属性-内容" class="headerlink" title="html标签按照内容可以分为 标签名 属性 内容"></a>html标签按照内容可以分为 标签名 属性 内容</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如&lt;x a1=<span class="string">" b1"</span> &gt;content&lt;/x&gt;</span><br></pre></td></tr></table></figure>
+
+<p>x是标签名 a1=”b1” 是属性a1是属性名 b1是属性值 一个标签可以有多个属性 第一属性和标签之间及多个属性之前需要用空格隔开 属性值最好用双引号隔开 属性可以只有属性名 没有属性值 content是内容<br><br><br>一个html标签可以没有属性 可以没有内容 一定要有标签名</p>
+<h4 id="常用的html标签"><a href="#常用的html标签" class="headerlink" title="常用的html标签"></a>常用的html标签</h4><h5 id="常用的html标签集合"><a href="#常用的html标签集合" class="headerlink" title="常用的html标签集合"></a>常用的html标签集合</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line"></span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">	&lt;title&gt;常用的html标签&lt;/title&gt;</span><br><span class="line"></span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!--h1到h6用于设置页面正文标题，其中h1字体最大，h6最小--&gt;</span><br><span class="line">&lt;h1&gt;一级标题&lt;/h1&gt;</span><br><span class="line">&lt;!--			p标签用于显示一个段落--&gt;</span><br><span class="line">&lt;p&gt;p标签是用来显示一个段落&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--div表示一块--&gt;</span><br><span class="line">&lt;div&gt;是常用的块元素标签&lt;/div&gt;</span><br><span class="line">&lt;!--section表示一部分，一段内容--&gt;</span><br><span class="line">&lt;section&gt;这是section标签，是h5新出的标签&lt;/section&gt;</span><br><span class="line">&lt;!--header一般在页面的头部出现--&gt;</span><br><span class="line">&lt;header&gt;h5新出的，用于表示页面的头部标签&lt;/header&gt;</span><br><span class="line">&lt;!--footer出现在页面得到底部--&gt;</span><br><span class="line">&lt;footer&gt;h5新出的，一般用于页面的底部&lt;/footer&gt;</span><br><span class="line">&lt;nav&gt;新出的，导航栏&lt;/nav&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!--img标签用于显示页面的一个图片 其中src用于表示要显示图片的实际位置（url） alt属性表示图片加载失败损坏时要替换得=的文本--&gt;</span><br><span class="line">&lt;img src=<span class="string">""</span> alt=<span class="string">""</span>&gt;</span><br><span class="line">&lt;!--用于换行，是一个单标签 可以带斜杠也可以不带斜杠--&gt;</span><br><span class="line">&lt;!--为了编写html代码时能够使用缩进换行  浏览器在解析html文本时 会忽略多余的空格和回车 所以在页面中需要换行的时候不能直接使用回车--&gt;</span><br><span class="line">&lt;br&gt;</span><br><span class="line">&lt;!--hr	是一个分割线用于分割内容--&gt;</span><br><span class="line">&lt;hr&gt;</span><br><span class="line">&lt;!--a标签用于显示超链接 点击后能够跳转 href属性设置用于跳转的地址 target属性用于设置跳转方式 _blank新开一个页面--&gt;</span><br><span class="line">&lt;a href=<span class="string">""</span> target=<span class="string">"_blank"</span>&gt;a标签 点击跳转&lt;/a&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="html中的转译字符"><a href="#html中的转译字符" class="headerlink" title="html中的转译字符"></a>html中的转译字符</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line"></span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">&lt;title&gt;&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!--html使用显示br显示一个换行--&gt;</span><br><span class="line">&lt;!--在html中 某些特殊字符不能输入 比如大于或者小于符号 因为浏览器在解析页面的时候会将它误认为某个标签--&gt;</span><br><span class="line">&lt;!--	在使用一些特殊字符的时候需要使用一些转译字符	--&gt;</span><br><span class="line">在html中&amp;lt;br&amp;gt;中表示换行</span><br><span class="line">&lt;!--	&amp;lt;表示小于符号 &amp;gt;表示大于符号--&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	在html中&amp;nbsp;表示空格</span><br><span class="line">	&lt;!--	&amp;nbsp;非换行的空格--&gt;</span><br><span class="line">	在html中&amp;emsp;中文空格</span><br><span class="line">	&lt;!--	&amp;emsp;中文的空格--&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/23/1-1/" data-id="cjyjwq9ps0009acuxgheev24h" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-0-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/20/0-2/" class="article-date">
+  <time datetime="2019-04-20T06:34:56.000Z" itemprop="datePublished">2019-04-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/css基础/">css基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/20/0-2/">超出部分文本显示省略号</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="超出部分文本显示省略号"><a href="#超出部分文本显示省略号" class="headerlink" title="超出部分文本显示省略号"></a>超出部分文本显示省略号</h5><h6 id="如果实现单行文本的溢出显示省略号同学们应该都知道用text-overflow-ellipsis属性来，当然还需要加宽度width属来兼容部分浏览。"><a href="#如果实现单行文本的溢出显示省略号同学们应该都知道用text-overflow-ellipsis属性来，当然还需要加宽度width属来兼容部分浏览。" class="headerlink" title="如果实现单行文本的溢出显示省略号同学们应该都知道用text-overflow:ellipsis属性来，当然还需要加宽度width属来兼容部分浏览。"></a>如果实现单行文本的溢出显示省略号同学们应该都知道用text-overflow:ellipsis属性来，当然还需要加宽度width属来兼容部分浏览。</h6><p>实现方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">overflow: hidden;</span><br><span class="line">text-overflow:ellipsis;</span><br><span class="line">white-space: nowrap;</span><br></pre></td></tr></table></figure>
+
+<p>但是这个属性只支持单行文本的溢出显示省略号，如果我们要实现多行文本溢出显示省略号呢。<br><br><br>接下来重点说一说多行文本溢出显示省略号，如下。</p>
+<p>实现方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">display: -webkit-box;</span><br><span class="line">-webkit-box-orient: vertical;</span><br><span class="line">-webkit-line-clamp: 3;</span><br><span class="line">overflow: hidden;</span><br></pre></td></tr></table></figure>
+
+<p>注：</p>
+<pre><code>-webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性：
+display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/20/0-2/" data-id="cjyjwq9po0006acux1o32q6pv" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css问题处理/">css问题处理</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/div/">div</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript入门/">JavaScript入门</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/css基础/">css基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/css处理方式/">css处理方式</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/html基础/">html基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript基础/">javascript基础</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Array/">Array[]</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Object/">Object{}</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css3/">css3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css问题处理/">css问题处理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/div/">div</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/对象/">对象</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/循环和条件语句/">循环和条件语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数组/">数组</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/浏览器/">浏览器</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Array/" style="font-size: 10px;">Array[]</a> <a href="/tags/JavaScript/" style="font-size: 17.5px;">JavaScript</a> <a href="/tags/Object/" style="font-size: 10px;">Object{}</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/css3/" style="font-size: 12.5px;">css3</a> <a href="/tags/css问题处理/" style="font-size: 15px;">css问题处理</a> <a href="/tags/div/" style="font-size: 12.5px;">div</a> <a href="/tags/html/" style="font-size: 12.5px;">html</a> <a href="/tags/javascript/" style="font-size: 12.5px;">javascript</a> <a href="/tags/web/" style="font-size: 12.5px;">web</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/对象/" style="font-size: 10px;">对象</a> <a href="/tags/循环和条件语句/" style="font-size: 10px;">循环和条件语句</a> <a href="/tags/数组/" style="font-size: 10px;">数组</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/10/09/jQuery-1-1/">jQuery-1-1</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/25/javascript-3/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/16/javascript-1-5/">javascript-入门之函数</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/16/javascript-1-3/">javascript-入门之运算符</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

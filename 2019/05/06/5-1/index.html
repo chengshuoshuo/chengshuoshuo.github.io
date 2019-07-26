@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>2d变形转换 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="css3中的2d变换transform属性带来了2d变换效果 rotate(180deg) 旋转 translate(100px,100px)平移 scale(1.2)缩放 skew(30deg,30deg)倾斜 makrix()以上三个属性的集合简写，有六个值 2d旋转123456789101112&amp;lt;style&amp;gt;.box&amp;#123;    width:100px;    height">
+<meta name="keywords" content="css,css3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2d变形转换">
+<meta property="og:url" content="http://yoursite.com/2019/05/06/5-1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="css3中的2d变换transform属性带来了2d变换效果 rotate(180deg) 旋转 translate(100px,100px)平移 scale(1.2)缩放 skew(30deg,30deg)倾斜 makrix()以上三个属性的集合简写，有六个值 2d旋转123456789101112&amp;lt;style&amp;gt;.box&amp;#123;    width:100px;    height">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-10T11:11:19.074Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2d变形转换">
+<meta name="twitter:description" content="css3中的2d变换transform属性带来了2d变换效果 rotate(180deg) 旋转 translate(100px,100px)平移 scale(1.2)缩放 skew(30deg,30deg)倾斜 makrix()以上三个属性的集合简写，有六个值 2d旋转123456789101112&amp;lt;style&amp;gt;.box&amp;#123;    width:100px;    height">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-5-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/06/5-1/" class="article-date">
+  <time datetime="2019-05-06T12:01:54.000Z" itemprop="datePublished">2019-05-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/css基础/">css基础</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      2d变形转换
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="css3中的2d变换"><a href="#css3中的2d变换" class="headerlink" title="css3中的2d变换"></a>css3中的2d变换</h4><p>transform属性带来了2d变换效果</p>
+<p>rotate(180deg) 旋转</p>
+<p>translate(100px,100px)平移</p>
+<p>scale(1.2)缩放</p>
+<p>skew(30deg,30deg)倾斜</p>
+<p>makrix()以上三个属性的集合简写，有六个值</p>
+<h5 id="2d旋转"><a href="#2d旋转" class="headerlink" title="2d旋转"></a>2d旋转</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.box&#123;</span><br><span class="line">    width:100px;</span><br><span class="line">    height:100px;</span><br><span class="line">    border:1px solid red;</span><br><span class="line">&#125;</span><br><span class="line">.box:hover&#123;</span><br><span class="line">    transform:rotate(90deg);&lt;!--旋转90度--&gt;</span><br><span class="line">    transform-origin:100px 100px;&lt;!--变换的中心点为div的元素的右下角--&gt;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;div class=&quot;box&quot;&gt;&lt;/box&gt;</span><br></pre></td></tr></table></figure>
+
+<p>平移和缩放都和旋转相差不多；</p>
+<h5 id="makrix-集合了旋转、缩放、平移、倾斜的属性"><a href="#makrix-集合了旋转、缩放、平移、倾斜的属性" class="headerlink" title="makrix()集合了旋转、缩放、平移、倾斜的属性"></a>makrix()集合了旋转、缩放、平移、倾斜的属性</h5><p>makrix()有着六个值 即：</p>
+<p>makrix(a,b,c,d,e,f)，六个值默认为0，也就是没有变化</p>
+<p>a 和d 分别是宽和高的缩放比，可以填入数值，等同于scole(x,y)；</p>
+<p>b 和c 分别是宽和高两对边相对x轴、y轴的倾斜值，可以填入数值，不能填入角度，可以等同于skew(x,y)；</p>
+<p>当b+c=0时，元素的两条边夹角为90度，可以等同于rotate()；</p>
+<p>e和f 分别是元素在x轴，y轴的偏移量，可以填入数值，等同于translate(x,y);</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/06/5-1/" data-id="cjyjwq9qb000pacuxfiaetufs" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css3/">css3</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/05/06/5-2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          3d变形转换
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/04/29/4-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">flex弹性布局</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript入门/">JavaScript入门</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/css基础/">css基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/css处理方式/">css处理方式</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/html基础/">html基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript基础/">javascript基础</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Array/">Array[]</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Object/">Object{}</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css3/">css3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css问题处理/">css问题处理</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/div/">div</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/对象/">对象</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/循环和条件语句/">循环和条件语句</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数组/">数组</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/浏览器/">浏览器</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Array/" style="font-size: 10px;">Array[]</a> <a href="/tags/JavaScript/" style="font-size: 17.5px;">JavaScript</a> <a href="/tags/Object/" style="font-size: 10px;">Object{}</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/css3/" style="font-size: 12.5px;">css3</a> <a href="/tags/css问题处理/" style="font-size: 15px;">css问题处理</a> <a href="/tags/div/" style="font-size: 12.5px;">div</a> <a href="/tags/html/" style="font-size: 12.5px;">html</a> <a href="/tags/javascript/" style="font-size: 12.5px;">javascript</a> <a href="/tags/web/" style="font-size: 12.5px;">web</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/对象/" style="font-size: 10px;">对象</a> <a href="/tags/循环和条件语句/" style="font-size: 10px;">循环和条件语句</a> <a href="/tags/数组/" style="font-size: 10px;">数组</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/10/09/jQuery-1-1/">jQuery-1-1</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/25/javascript-3/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/16/javascript-1-5/">javascript-入门之函数</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/16/javascript-1-3/">javascript-入门之运算符</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
